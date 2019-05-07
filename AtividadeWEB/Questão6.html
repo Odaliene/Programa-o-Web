@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Questão 6 - Métodos HTTP</title>
+  </head>
+  <body>
+    <h1> Métodos HTTP</h1>
+    <h2> Método GET </h2>
+    <p>  Essa é a requisição mais comum de todas. Através dessa requisição nós pedimos a <b> representação de um recurso</b>: que pode ser um arquivo html, xml, json, etc.
+      O método GET utiliza a própria URI (normalmente chamada de URL) para enviar dados ao servidor, quando enviamos um
+      formulário pelo método GET, o navegador <b>pega as informações</b> do formulário e coloca junto com a URI de onde o formulário
+      vai ser enviado e envia,  separando o endereço da URI dos dados do formulário por um “?” (ponto de interrogação).
+</p>
+    <h2> Método POST </h2>
+    <p> O método POST é utilizado quando queremos <b>criar um recurso</b>. Quando usamos POST, os dados vão no corpo da requisição e não na URI.
+      Uma requisição por meio desse método sempre requer que as informações submetidas sejam incluídas no corpo da mensagem e formatadas como
+      uma query string, além de conter cabeçalhos adicionais especificando seu tamanho e seu formato.</p>
+    <h2> Método PUT </h2>
+    <p>O método PUT <b>substitui todas as atuais representações do recurso de destino pela carga de dados da requisição</b>. O PUT deve ser usado em situações
+       mais específicas onde se quer enviar uma informação e não fazer mais nada além de armazená-la de alguma forma. </p>
+    <h2> Método DELETE</h2>
+    <p>Usado para <b>remover o recurso</b> (por exemplo uma nota): utilize com passagem de ID.  </p>
+    </body>
+      </html>
