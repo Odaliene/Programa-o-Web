@@ -1,0 +1,88 @@
+<<!DOCTYPE html>
+<html>
+  <head>
+    <title> Aprendendo programação web </title>
+    </head>
+
+<body>
+<header> Cabeçalho
+<nav>
+<ul>
+  <li>Lançamento</li>
+  <li>Ofertas</li>
+  </ul>
+
+</nav>
+
+</header>
+<main>
+<table border='1'>
+  <form>
+             <tr>
+                   <th>  Produto  </th>
+                    <th>  Preço (R$) </th>
+                    <th> Imagem </th>
+                     </tr>
+
+                     <tr>
+                       <td> Feijão</td>
+                        <td rowspan = '3'> 4,20 </td>
+                        <td> <img src='Imagem/feijao.jpg' height="50" width="50"/>
+
+                        </td>
+                         </tr>
+
+                         <tr>
+                           <td>Arroz</td>
+                           <td>
+                           <img src='Imagem/arroz.jpg' height="50" width="50"/> </td>
+                         </tr>
+
+
+
+
+          </table>
+
+
+      <table border=1 cellspacing=0 cellpadding=2 bordercolor="666633">
+        <form>
+          <label> <b> Nome: </b> </label>
+          <input type= 'text' name= "Nome:"/> <br>
+          <form>
+
+            <label> <b> Endereço: </b> </label>
+            <input type= 'text' name= "Endereço:"/> <br>
+
+            <b> Estado </b>
+            <select name='estado'>
+              <option value = 'opc1'> Paraíba </option>
+              <option value = 'opc2'> Pernambuco </option>
+              <option value = 'opc3'> Rio Grande do Norte </option>
+            </select>
+
+            <label> <b> Sexo: </b> </label>
+            <input type="radio" name="sex" value="male"> Masculino
+            <input type="radio" name="sex" value="female"> Feminino
+            <br>
+
+            <label> <b> Matérias preferidas: </b> </label>
+            <input type="radio" name='Português' value='1'> Português
+            <input type="radio" name='Matemática' value = '2'> Matemática
+            <input type="radio" name='Java' value = '3'> Java
+            <input type="radio" name='PHP' value='4'> PHP <br>
+
+                  <textarea name="teste" cols="25" rows="4" > Resumo de suas habilidades...
+                  </textarea> <br>
+                  <input type= 'submit' value = 'Enviar'>
+
+                </form>
+    </table>
+
+    </main>
+
+    <footer>
+      Rodapé
+      </footer>
+
+  </body>
+  </html>
