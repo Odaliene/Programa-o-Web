@@ -1,0 +1,21 @@
+.navigation{
+  border: 1px solid black;
+  list-style: none;
+  margin: 0;
+  background: #FA8072;
+
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover{
+  background: #A52A2A;
+}

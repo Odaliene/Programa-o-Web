@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.meu-container {
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
+  min-height: 100vh;
+
+
+  /*Flex*/
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #CAEBF2;
+}
+
+
+main{
+  background-color: #EFEFEF;
+  flex-grow: 1;
+}
+
+
+footer{
+  background-color: #FA8072;
+}
