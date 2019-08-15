@@ -3,31 +3,25 @@
   padding: 0;
 }
 
-.meu-container {
+.meu-container{
   margin: 0 auto;
   padding: 0;
-  border: 1px solid black;
   width: 80%;
-  margin: 0 auto;
   min-height: 100vh;
-
-
-  /*Flex*/
+  /* Flex */
   display: flex;
   flex-direction: column;
 }
 
 header {
-  background-color: #CAEBF2;
+  background-color: #F2B5A7;
 }
 
-
 main{
-  background-color: #EFEFEF;
+  background-color: #F4F4F4;
   flex-grow: 1;
 }
 
-
 footer{
-  background-color: #FA8072;
+  background-color: #808080;
 }
