@@ -2,7 +2,7 @@
   border: 1px solid black;
   list-style: none;
   margin: 0;
-  background: #FA8072;
+  background: #BFD8D2;
 
   display: flex;
   flex-direction: row-reverse;
@@ -13,9 +13,9 @@
   text-decoration: none;
   display: block;
   padding: 1em;
-  color: white;
+  color: black;
 }
 
 .navigation a:hover{
-  background: #A52A2A;
+  background: #FEDCD2;
 }
