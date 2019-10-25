@@ -80,7 +80,7 @@ var campusController = function($scope){
 
 app.controller('CampusController', campusController);
 
-/ Aluno - Factory
+// Aluno - Factory
 var alunoFactory = function($http) {
 
   var baseUrl = "localhost:5000";
@@ -112,7 +112,7 @@ var alunoFactory = function($http) {
 
 app.factory("alunoApi", alunoFactory);
 
-/ Campus - Factory
+// Campus - Factory
 var campusFactory = function($http) {
 
   var baseUrl = "localhost:5000";
@@ -144,7 +144,7 @@ var campusFactory = function($http) {
 
 app.factory("campusApi", campusFactory);
 
-/ Curso - Factory
+// Curso - Factory
 var cursoFactory = function($http) {
 
   var baseUrl = "localhost:5000";
@@ -176,7 +176,7 @@ var cursoFactory = function($http) {
 
 app.factory("cursoApi", cursoFactory);
 
-/ disiciplina - Factory
+// disiciplina - Factory
 var disciplinaFactory = function($http) {
 
   var baseUrl = "localhost:5000";
@@ -208,7 +208,7 @@ var disciplinaFactory = function($http) {
 
 app.factory("disciplinaApi", disciplinaFactory);
 
-/ Endereço - Factory
+// Endereço - Factory
 var endereçoFactory = function($http) {
 
   var baseUrl = "localhost:5000";
@@ -240,7 +240,7 @@ var endereçoFactory = function($http) {
 
 app.factory("endereçoApi", endreçoFactory);
 
-/ Escola - Factory
+// Escola - Factory
 var EscolaFactory = function($http) {
 
   var baseUrl = "localhost:5000";
@@ -272,7 +272,7 @@ var EscolaFactory = function($http) {
 
 app.factory("escolaApi", escolaFactory);
 
-/ Turma - Factory
+// Turma - Factory
 var turmaFactory = function($http) {
 
   var baseUrl = "localhost:5000";
@@ -304,7 +304,7 @@ var turmaFactory = function($http) {
 
 app.factory("turmaApi", turmaFactory);
 
-/ Turno - Factory
+// Turno - Factory
 var turnoFactory = function($http) {
 
   var baseUrl = "localhost:5000";
@@ -335,3 +335,36 @@ var turnoFactory = function($http) {
 }
 
 app.factory("turnoApi", turnoFactory);
+
+
+// Professor - Factory
+var professorFactory = function($http) {
+
+  var baseUrl = "localhost:5000";
+  var path = baseUrl + "/professor";
+
+  var _cadastrar = function(professor) {
+    return $http.post(path, professor)
+  };
+
+  var _atualizar = function(professor) {
+    return $http.put(path, professor)
+  };
+
+  var _buscarPorId = function(id) {
+    return $http.get(_path + "/" + encodeURI(id))
+  };
+
+  var _listar = function() {
+    return $http.get(_path)
+  };
+
+  return {
+    cadastrar: _cadastrar,
+    atualizar: _atualizar,
+    buscarPorId: _buscarPorId,
+    listar: _listar
+  };
+}
+
+app.factory("professorApi", professorFactory);

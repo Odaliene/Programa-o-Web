@@ -20,8 +20,15 @@ header {
 main{
   background-color: #F4F4F4;
   flex-grow: 1;
+
 }
 
 footer{
-  background-color: #808080;
+  background-color: white;
+  float: center;
+}
+#ifpb img{
+    width: 80px;
+    float: center;
+    padding: 2px 0px;
 }

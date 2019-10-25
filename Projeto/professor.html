@@ -2,7 +2,7 @@
 <html ng-app="Projeto">
   <head>
     <meta charset="utf-8">
-    <title>Cadastrar Curso</title>
+    <title>Cadastrar Professor</title>
     <link rel="stylesheet" type="text/css" href="CSS/index.css">
     <link rel="stylesheet" type="text/css" href="CSS/menu.css">
     <!-- AngularJS -->
@@ -26,49 +26,48 @@
         </a>
         <nav>
           <ul class="navigation">
-            <li><a href="turno.html"><b>Turno</b></a></li>
-            <li><a href="turma.html"><b>Turma</b></a></li>
-            <li><a href="professor.html"><b>Professor</b></a></li>
-            <li><a href="escola.html"><b>Escola</b></a></li>
-            <li><a href="endereco.html"><b>Endereço</b></a></li>
-            <li><a href="disciplina.html"><b>Disciplina</b></a></li>
-            <li><a href="curso.html"><b>Curso</b></a></li>
-            <li><a href="campus.html"><b>Campus</b></a></li>
-            <li><a href="aluno.html"><b>Aluno</b></a></li>
-            <li><a href="sumário.html"><b>Aluno</b></a></li>
+            <li><a href="form_turno.html"><b>Turno</b></a></li>
+            <li><a href="form_turma.html"><b>Turma</b></a></li>
+            <li><a href="form_professor.html"><b>Professor</b></a></li>
+            <li><a href="form_escola.html"><b>Escola</b></a></li>
+            <li><a href="form_endereco.html"><b>Endereço</b></a></li>
+            <li><a href="form_disciplina.html"><b>Disciplina</b></a></li>
+            <li><a href="form_curso.html"><b>Curso</b></a></li>
+            <li><a href="form_campus.html"><b>Campus</b></a></li>
+            <li><a href="form_aluno.html"><b>Aluno</b></a></li>
           </ul>
         </nav>
       </header>
-      <main ng-controller="CursoController" class="forms">
+      <main ng-controller="ProfessorController" class="forms">
         <p>
-          <b> <u>Cadastrar Curso</u> </b>
+          <b> <u>Cadastrar Professor</u> </b>
         </p>
-        <form name="cursoForm">
+        <form name="professorForm">
           <div class="form-group">
             <label for= 'Nome'> Nome:</label>
-            <input type= 'text' ng-model="curso.nome" name= 'nome'class="form-control" ng-required="true" placeholder="Nome" ng-minlength="3" ng-maxlength="25">
+            <input type= 'text' ng-model="professor.nome" name= 'nome' class="form-control" ng-required="true" placeholder="Nome" ng-minlength="3" ng-maxlength="25">
             <div>
-              <div ng-show="cursoForm.nome.$error.required && cursoForm.nome.$dirty" class="alert alert-danger">
+              <div ng-show="professorForm.nome.$error.required && professorForm.nome.$dirty" class="alert alert-danger">
                 Por favor, preencha o campo Nome!
               </div>
-              <div ng-show="cursoForm.nome.$error.minlength" class="alert alert-info">
+              <div ng-show="professorForm.nome.$error.minlength" class="alert alert-info">
                 Atenção, o campo Nome deve ter o tamanho mínimo de 3 caracteres!
               </div>
-              <div ng-show="cursoForm.nome.$error.maxlength" class="alert alert-info">
+              <div ng-show="professorForm.nome.$error.maxlength" class="alert alert-info">
                 Atenção, o campo Nome deve ter o tamanho máximo de 25 caracteres!
               </div>
             </div>
           </div>
           <div class="form-group">
-            <label for= 'fk_id_turno'> FK_Turno:</label>
-            <input type= 'text' ng-model="curso.fk_id_turno" name= 'fk_id_turno' class="form-control" ng-required="true" placeholder="FK_Turno">
+            <label for= 'fk_id_endereco'> FK_Endereço:</label>
+            <input type= 'text' ng-model= 'professor.fk_id_endereco' name="fk_id_endereco" class="form-control" ng-required="true" placeholder="FK_Endereço">
             <div>
-              <div ng-show="cursoForm.fk_id_turno.$error.required && cursoForm.fk_id_turno.$dirty" class="alert alert-danger">
-                Por favor, preencha o campo FK_Turno!
+              <div ng-show="professorForm.fk_id_endereco.$error.required && professorForm.fk_id_endereco.$dirty" class="alert alert-danger">
+                Por favor, preencha o campo FK_Endereço!
               </div>
             </div>
           </div>
-          <button ng-click="cadastrar()" class="btn btn-dark btn-lg btn-block" ng-disabled="cursoForm.$invalid">Cadastrar</button>
+          <button ng-click="cadastrar()" class="btn btn-dark btn-lg btn-block" ng-disabled="escolaForm.$invalid">Cadastrar</button>
         </form>
       </main>
       <footer>
